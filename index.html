@@ -41,7 +41,7 @@
                     </div>
                     <div>
                     <input id="ammount-input" placeholder="Write Donation Amount" class="p-2 w-[520px] h-14 border-2 border-gray-300 rounded-lg" type="text"></div>
-                    <div><button class="h-14 w-[520px] rounded-lg font-bold text-2xl bg-lime-300">Donate Now</button></div>
+                    <div><button onclick="openPopup()" class="h-14 w-[520px] rounded-lg font-bold text-2xl bg-lime-300">Donate Now</button></div>
                 </div>
             </div>
             <!-- card-2 -->
@@ -93,8 +93,21 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+    <!-- pop up contents -->
+     <div id="popup" class="fixed inset-0 hidden items-center justify-center z-50">
+        <!-- dark bg -->
+         <div class="absolute inset-0 bg-black/50"></div>
+         <!-- Popup Notification -->
+          <div class=" bg-white h-[400px] w-[600px] z-10 rounded-3xl flex flex-col justify-center space-y-8 items-center text-center">
+            <h4 class="text-5xl font-bold">Congrats!</h4>
+            <img class="h-[50px] w-[50px]" src="assets/assets/coin.png" alt="">
+            <h4 class="text-2xl font-semibold text-gray-500">You Have Donated For Humanity</h4>
+            <h4 class="text-3xl font-bold">Successfully</h4>
+            <button onclick="closePopup()" class="h-[60px] w-[200px] bg-gray-200 rounded-xl text-lg font-semibold">Close Confirmation</button>
+          </div>
+     </div></footer>
     <!-- linked files -->
-
+    <script src="js/popup.js"></script>
 </body>
 </html>
