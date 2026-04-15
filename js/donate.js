@@ -12,11 +12,21 @@ document.getElementById('donate-btn-1').addEventListener('click', function(event
         alert("wrong input value");
         return;
     }
-        const newCardBalance1 = cardBalanceNum1 + inputBalanceNum1;
-        const newAvailableBalance1 = availableBalanceNum1 - inputBalanceNum1;
-        document.getElementById('card-balance-1').innerText = newCardBalance1;
-        document.getElementById('available-balance').innerText = newAvailableBalance1;
-        openPopup();
+    const newCardBalance1 = cardBalanceNum1 + inputBalanceNum1;
+    const newAvailableBalance1 = availableBalanceNum1 - inputBalanceNum1;
+    document.getElementById('card-balance-1').innerText = newCardBalance1;
+    document.getElementById('available-balance').innerText = newAvailableBalance1;
+    openPopup();
+    const timeAndDate = new Date()
+    const tandD = timeAndDate.toLocaleString();
+    const donationHistory1 = document.createElement("div");
+    donationHistory1.classList.add('border-gray-300', 'border-[2px]', 'rounded-lg', 'h-[140px]', 'p-10')
+    donationHistory1.innerHTML =`
+    <p class="text-lg font-medium">${inputBalanceNum1} Taka is Donated for Donate For Flood At Noakhali, Bangladesh.</p>
+    <p class="text-lg font-medium">Date: ${tandD} </p>
+    `
+    document.getElementById('history-section').appendChild(donationHistory1)
+    
 })
 // Card-2 Donation
 document.getElementById('donate-btn-2').addEventListener('click', function(event){
@@ -37,6 +47,15 @@ document.getElementById('donate-btn-2').addEventListener('click', function(event
     document.getElementById('card-balance-2').innerText = newCardBalance2;
     document.getElementById('available-balance').innerText = newAvailableBalance2;
     openPopup();
+    const timeAndDate = new Date()
+    const tandD = timeAndDate.toLocaleString();
+    const donationHistory2 = document.createElement("div");
+    donationHistory2.classList.add('border-gray-300', 'border-[2px]', 'rounded-lg', 'h-[140px]', 'p-10')
+    donationHistory2.innerHTML =`
+    <p class="text-lg font-medium">${inputBalanceNum2} Taka is Donated for Donate for Flood Relief in Feni, Bangladesh.</p>
+    <p class="text-lg font-medium">Date: ${tandD} </p>
+    `
+    document.getElementById('history-section').appendChild(donationHistory2)
 })
 // Card-3 Donation
 document.getElementById('donate-btn-3').addEventListener('click', function(event){
@@ -57,4 +76,13 @@ document.getElementById('donate-btn-3').addEventListener('click', function(event
     document.getElementById('card-balance-3').innerText = newCardBalance3;
     document.getElementById('available-balance').innerText = newAvailableBalance3;
     openPopup();
+    const timeAndDate = new Date()
+    const tandD = timeAndDate.toLocaleString();
+    const donationHistory3 = document.createElement("div");
+    donationHistory3.classList.add('border-gray-300', 'border-[2px]', 'rounded-lg', 'h-[140px]', 'p-10')
+    donationHistory3.innerHTML =`
+    <p class="text-lg font-medium">${inputBalanceNum3} Taka is Donated for Aid for Injured in the Quota Movement.</p>
+    <p class="text-lg font-medium">Date: ${tandD} </p>
+    `
+    document.getElementById('history-section').appendChild(donationHistory3)
 })
