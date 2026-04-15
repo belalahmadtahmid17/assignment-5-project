@@ -15,14 +15,18 @@
         <img src="assets/assets/logo.png" alt="" class="h-20">
         <h4 class="text-2xl font-bold">Donate Bangladesh</h4>
         </div>
-        <div class="flex items-center gap-3"><img src="assets/assets/coin.png" alt=""><h4 class="font-bold text-xl text-gray-500">5500</h4></div>
+        <div class="flex items-center gap-3"><img src="assets/assets/coin.png" alt=""><h4 id="available-balance" class="font-bold text-xl text-gray-500">5500</h4></div>
     </header>
     <main class="mb-[10%] pb-20 bg-white">
+
+
         <!-- button section start -->
         <section class="flex justify-center gap-20 p-10 mt-20">
         <div class="flex items-center"><button id="donation-btn" class="h-16 w-44 rounded-lg font-bold text-2xl bg-lime-300">Donation</button></div>
          <div class="flex items-center"><button id="history-btn" class="h-16 w-44 rounded-lg font-bold text-2xl border-[2px] border-gray-300">History</button></div>
         </section>
+        <!-- button section ends -->
+
          <!-- donation section start -->
         <section id="donation-section" class="w-full grid gap-10 justify-center">
             <!-- card-1 -->
@@ -31,7 +35,7 @@
                 <div><img src="assets/assets/noakhali.png" alt="" class="rounded-3xl"></div>
                 <!-- information part -->
                 <div class="space-y-5">
-                    <div class="flex items-center justify-center h-10 w-32 space-x-2 rounded-lg bg-gray-200 text-gray-500 font-semibold"><img src="assets/assets/coin.png" alt=""><h4><span>0 </span>BDT</h4></div>
+                    <div class="flex items-center justify-center h-10 w-32 space-x-2 rounded-lg bg-gray-200 text-gray-500 font-semibold"><img src="assets/assets/coin.png" alt=""><h4><span id="card-balance-1">0 </span>BDT</h4></div>
                     <div><h1 class="font-bold text-lg">Donate for Flood at Noakhali, Bangladesh</h1>
                         <p class="font-normal text-gray-500">The recent floods in Noakhali have caused significant damage to <br>
                             homes  infrastructure. Your donation will help provide essential  <br>
@@ -40,8 +44,8 @@
                             efforts and making a positive impact on the lives of those in need.</p> <br>
                     </div>
                     <div>
-                    <input id="ammount-input" placeholder="Write Donation Amount" class="p-2 w-[520px] h-14 border-2 border-gray-300 rounded-lg" type="text"></div>
-                    <div><button onclick="openPopup()" class="h-14 w-[520px] rounded-lg font-bold text-2xl bg-lime-300">Donate Now</button></div>
+                    <input id="amount-input-1" placeholder="Write Donation Amount" class="p-2 w-[520px] h-14 border-2 border-gray-300 rounded-lg" type="text"></div>
+                    <div><button id="donate-btn-1" class="h-14 w-[520px] rounded-lg font-bold text-2xl bg-lime-300">Donate Now</button></div>
                 </div>
             </div>
             <!-- card-2 -->
@@ -50,7 +54,7 @@
                 <div><img src="assets/assets/feni.png" alt="" class="rounded-3xl"></div>
                 <!-- information part -->
                 <div class="space-y-5">
-                    <div class="flex items-center justify-center h-10 w-32 space-x-2 rounded-lg bg-gray-200 text-gray-500 font-semibold"><img src="assets/assets/coin.png" alt=""><h4><span>600 </span> BDT</h4></div>
+                    <div class="flex items-center justify-center h-10 w-32 space-x-2 rounded-lg bg-gray-200 text-gray-500 font-semibold"><img src="assets/assets/coin.png" alt=""><h4><span id="card-balance-2">0 </span> BDT</h4></div>
                     <div><h1 class="font-bold text-lg">Donate for Flood Relief in Feni,Bangladesh</h1>
                         <p class="font-normal text-gray-500">
                             The recent floods in Feni have devastated local communities, leading  <br>
@@ -63,8 +67,8 @@
                         </p>
                     </div>
                     <div>
-                    <input id="ammount-input" placeholder="Write Donation Amount" class="p-2 w-[520px] h-14 border-2 border-gray-300 rounded-lg" type="text"></div>
-                    <div><button class="h-14 w-[520px] rounded-lg font-bold text-2xl bg-lime-300">Donate Now</button></div>
+                    <input id="amount-input-2" placeholder="Write Donation Amount" class="p-2 w-[520px] h-14 border-2 border-gray-300 rounded-lg" type="text"></div>
+                    <div><button id="donate-btn-2" class="h-14 w-[520px] rounded-lg font-bold text-2xl bg-lime-300">Donate Now</button></div>
                 </div>
             </div>
             <!-- card-3 -->
@@ -73,7 +77,7 @@
                 <div><img src="assets/assets/quota-protest.png" alt="" class="rounded-3xl"></div>
                 <!-- information part -->
                 <div class="space-y-5">
-                    <div class="flex items-center justify-center h-10 w-32 space-x-2 rounded-lg bg-gray-200 text-gray-500 font-semibold"><img src="assets/assets/coin.png" alt=""><h4><span>2400 </span>BDT</h4></div>
+                    <div class="flex items-center justify-center h-10 w-32 space-x-2 rounded-lg bg-gray-200 text-gray-500 font-semibold"><img src="assets/assets/coin.png" alt=""><h4><span id="card-balance-3">0 </span>BDT</h4></div>
                     <div><h1 class="font-bold text-lg">Aid for Injured in the Quota Movement</h1>
                         <p class="font-normal text-gray-500">
                         The recent Quota movement has resulted in numerous injuries and <br>
@@ -87,15 +91,18 @@
                         </p>
                     </div>
                     <div>
-                    <input id="ammount-input" placeholder="Write Donation Amount" class="p-2 w-[520px] h-14 border-2 border-gray-300 rounded-lg" type="text"></div>
-                    <div><button class="h-14 w-[520px] rounded-lg font-bold text-2xl bg-lime-300">Donate Now</button></div>
+                    <input id="amount-input-3" placeholder="Write Donation Amount" class="p-2 w-[520px] h-14 border-2 border-gray-300 rounded-lg" type="text"></div>
+                    <div><button id="donate-btn-3" class="h-14 w-[520px] rounded-lg font-bold text-2xl bg-lime-300">Donate Now</button></div>
                 </div>
             </div>
         </section>
+        <!-- donation section ends -->
+
         <!-- history section start -->
          <section id="history-section">
         
          </section>
+         <!-- history section ends -->
     </main>
     <footer>
     <!-- pop up contents -->
@@ -114,5 +121,7 @@
     <!-- linked files -->
     <script src="js/popup.js"></script>
     <script src="js/features.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/donate.js"></script>
 </body>
 </html>
