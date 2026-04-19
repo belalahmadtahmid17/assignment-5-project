@@ -1,5 +1,7 @@
 // Card-1 Donation
-document.getElementById('donate-btn-1').addEventListener('click', function(event){
+const donationBTN1= document.getElementById('donate-btn-1');
+if(donationBTN1){
+    donationBTN1.addEventListener('click', function(event){
     event.preventDefault();
     const availableBalanceValue1 = getInnerTextById('available-balance');
     const cardBalanceValue1 = getInnerTextById('card-balance-1');
@@ -36,8 +38,11 @@ document.getElementById('donate-btn-1').addEventListener('click', function(event
     document.getElementById('history-section').appendChild(donationHistory1)
     
 })
+}
 // Card-2 Donation
-document.getElementById('donate-btn-2').addEventListener('click', function(event){
+const donationBTN2 = document.getElementById('donate-btn-2')
+if(donationBTN2){
+    donationBTN2.addEventListener('click', function(event){
     event.preventDefault();
     const availableBalanceValue2 = getInnerTextById('available-balance');
     const cardBalanceValue2 = getInnerTextById('card-balance-2');
@@ -73,8 +78,11 @@ document.getElementById('donate-btn-2').addEventListener('click', function(event
     `
     document.getElementById('history-section').appendChild(donationHistory2)
 })
+}
 // Card-3 Donation
-document.getElementById('donate-btn-3').addEventListener('click', function(event){
+const donationBTN3 = document.getElementById('donate-btn-3')
+if(donationBTN3){
+    donationBTN3.addEventListener('click', function(event){
     event.preventDefault();
     const availableBalanceValue3 = getInnerTextById('available-balance');
     const cardBalanceValue3 = getInnerTextById('card-balance-3');
@@ -110,3 +118,4 @@ document.getElementById('donate-btn-3').addEventListener('click', function(event
     `
     document.getElementById('history-section').appendChild(donationHistory3)
 })
+}
