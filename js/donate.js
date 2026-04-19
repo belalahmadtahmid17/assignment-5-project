@@ -8,8 +8,16 @@ document.getElementById('donate-btn-1').addEventListener('click', function(event
     const availableBalanceNum1 = Number(availableBalanceValue1);
     const cardBalanceNum1 = Number(cardBalanceValue1);
     const inputBalanceNum1 = Number(inputBalanceValue1);
-    if(isNaN(inputBalanceNum1) || inputBalanceNum1 <= 0 || inputBalanceNum1 > availableBalanceNum1 ){
-        alert("wrong input value");
+    if(isNaN(inputBalanceNum1)){
+        alert("Please Enter A Valid Number!");
+        return;
+    }
+    if(inputBalanceNum1 <= 0){
+        alert("Donation Amount Cannot Be Negative!");
+        return;
+    }
+    if(inputBalanceNum1 > availableBalanceNum1){
+        alert("Not Enough Balance!");
         return;
     }
     const newCardBalance1 = cardBalanceNum1 + inputBalanceNum1;
@@ -38,8 +46,16 @@ document.getElementById('donate-btn-2').addEventListener('click', function(event
     const availableBalanceNum2 = Number(availableBalanceValue2)
     const cardBalanceNum2 = Number(cardBalanceValue2);
     const inputBalanceNum2 = Number(inputBalanceValue2);
-    if(isNaN(inputBalanceNum2) || inputBalanceNum2 <= 0 || inputBalanceNum2 > availableBalanceNum2){
-        alert('Wrong Input Value');
+    if(isNaN(inputBalanceNum2)){
+        alert("Please Enter A Valid Number!");
+        return;
+    }
+    if(inputBalanceNum2 <= 0){
+        alert("Donation Amount Cannot Be Negative!");
+        return;
+    }
+    if(inputBalanceNum2 > availableBalanceNum2){
+        alert("Not Enough Balance!");
         return;
     }
     const newCardBalance2 = cardBalanceNum2 + inputBalanceNum2;
@@ -67,8 +83,16 @@ document.getElementById('donate-btn-3').addEventListener('click', function(event
     const availableBalanceNum3 = Number(availableBalanceValue3)
     const cardBalanceNum3 = Number(cardBalanceValue3);
     const inputBalanceNum3 = Number(inputBalanceValue3);
-    if(isNaN(inputBalanceNum3) || inputBalanceNum3 <= 0 || inputBalanceNum3 > availableBalanceNum3){
-        alert('Wrong Input Value');
+   if(isNaN(inputBalanceNum3)){
+        alert("Please Enter A Valid Number!");
+        return;
+    }
+    if(inputBalanceNum3 <= 0){
+        alert("Donation Amount Cannot Be Negative!");
+        return;
+    }
+    if(inputBalanceNum3 > availableBalanceNum3){
+        alert("Not Enough Balance!");
         return;
     }
     const newCardBalance3 = cardBalanceNum3 + inputBalanceNum3;
