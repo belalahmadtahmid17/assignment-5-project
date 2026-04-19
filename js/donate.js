@@ -14,7 +14,7 @@ document.getElementById('donate-btn-1').addEventListener('click', function(event
     }
     const newCardBalance1 = cardBalanceNum1 + inputBalanceNum1;
     const newAvailableBalance1 = availableBalanceNum1 - inputBalanceNum1;
-    document.getElementById('card-balance-1').innerText = newCardBalance1;
+    document.getElementById('card-balance-1').innerText = newCardBalance1 + " ";
     document.getElementById('available-balance').innerText = newAvailableBalance1;
     openPopup();
     const timeAndDate = new Date()
@@ -44,7 +44,7 @@ document.getElementById('donate-btn-2').addEventListener('click', function(event
     }
     const newCardBalance2 = cardBalanceNum2 + inputBalanceNum2;
     const newAvailableBalance2 = availableBalanceNum2 - inputBalanceNum2;
-    document.getElementById('card-balance-2').innerText = newCardBalance2;
+    document.getElementById('card-balance-2').innerText = newCardBalance2 + " ";
     document.getElementById('available-balance').innerText = newAvailableBalance2;
     openPopup();
     const timeAndDate = new Date()
@@ -73,7 +73,7 @@ document.getElementById('donate-btn-3').addEventListener('click', function(event
     }
     const newCardBalance3 = cardBalanceNum3 + inputBalanceNum3;
     const newAvailableBalance3 = availableBalanceNum3 - inputBalanceNum3;
-    document.getElementById('card-balance-3').innerText = newCardBalance3;
+    document.getElementById('card-balance-3').innerText = newCardBalance3 + " ";
     document.getElementById('available-balance').innerText = newAvailableBalance3;
     openPopup();
     const timeAndDate = new Date()
