@@ -3,6 +3,7 @@ const donationBTN1= document.getElementById('donate-btn-1');
 if(donationBTN1){
     donationBTN1.addEventListener('click', function(event){
     event.preventDefault();
+    // Common Functions Called
     const availableBalanceValue1 = getInnerTextById('available-balance');
     const cardBalanceValue1 = getInnerTextById('card-balance-1');
     const inputBalanceValue1 = getInputFieldValueById('amount-input-1');
@@ -15,7 +16,7 @@ if(donationBTN1){
         return;
     }
     if(inputBalanceNum1 <= 0){
-        alert("Donation Amount Cannot Be Negative!");
+        alert("Donation Amount Cannot Be Negative or 0!");
         return;
     }
     if(inputBalanceNum1 > availableBalanceNum1){
@@ -44,6 +45,7 @@ const donationBTN2 = document.getElementById('donate-btn-2')
 if(donationBTN2){
     donationBTN2.addEventListener('click', function(event){
     event.preventDefault();
+    // Common Functions Called
     const availableBalanceValue2 = getInnerTextById('available-balance');
     const cardBalanceValue2 = getInnerTextById('card-balance-2');
     const inputBalanceValue2 = getInputFieldValueById('amount-input-2');
@@ -56,7 +58,7 @@ if(donationBTN2){
         return;
     }
     if(inputBalanceNum2 <= 0){
-        alert("Donation Amount Cannot Be Negative!");
+        alert("Donation Amount Cannot Be Negative or 0!");
         return;
     }
     if(inputBalanceNum2 > availableBalanceNum2){
@@ -84,6 +86,7 @@ const donationBTN3 = document.getElementById('donate-btn-3')
 if(donationBTN3){
     donationBTN3.addEventListener('click', function(event){
     event.preventDefault();
+    // Common Functions Called
     const availableBalanceValue3 = getInnerTextById('available-balance');
     const cardBalanceValue3 = getInnerTextById('card-balance-3');
     const inputBalanceValue3 = getInputFieldValueById('amount-input-3');
@@ -96,7 +99,7 @@ if(donationBTN3){
         return;
     }
     if(inputBalanceNum3 <= 0){
-        alert("Donation Amount Cannot Be Negative!");
+        alert("Donation Amount Cannot Be Negative or 0!");
         return;
     }
     if(inputBalanceNum3 > availableBalanceNum3){
